@@ -21,14 +21,10 @@ struct PointsView: View {
 }
 
 #Preview {
-  @Previewable @State var alertIsVisible = true
-  @Previewable @State var game = Game()
-  PointsView(alertIsVisible: $alertIsVisible, sliderValue: .constant(50.0), game: $game)
+  PointsView()
 }
 
 #Preview("Dark Mode", traits: .landscapeRight) {
-  @Previewable @State var alertIsVisible = true
-  @Previewable @State var game = Game()
-  PointsView(alertIsVisible: $alertIsVisible, sliderValue: .constant(50.0), game: $game)
+  PointsView()
     .preferredColorScheme(.dark)
 }
