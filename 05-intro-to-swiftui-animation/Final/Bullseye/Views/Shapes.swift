@@ -15,7 +15,7 @@ struct Shapes: View {
       RoundedRectangle(cornerRadius: 20)
         .fill(Color.blue)
         .frame(width: wideShapes ? 200 : 100, height: 100)
-//        .animation(.easeInOut, value: wideShapes)
+      //        .animation(.easeInOut, value: wideShapes)
       Capsule()
         .fill(Color.blue)
         .frame(width: wideShapes ? 200 : 100, height: 100)
