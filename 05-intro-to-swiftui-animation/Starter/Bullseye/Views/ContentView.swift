@@ -80,12 +80,11 @@ struct HitMeButton: View {
   }
 }
 
-struct ContentView_Previews: PreviewProvider {
-  static var previews: some View {
-    ContentView()
-    ContentView()
-      .previewInterfaceOrientation(.landscapeRight)
-      .preferredColorScheme(.dark)
+#Preview {
+  ContentView()
+}
 
-  }
+#Preview("Dark Mode", traits: .landscapeRight) {
+  ContentView()
+    .preferredColorScheme(.dark)
 }

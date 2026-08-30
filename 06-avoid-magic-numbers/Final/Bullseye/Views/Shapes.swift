@@ -31,8 +31,6 @@ struct Shapes: View {
   }
 }
 
-struct Shapes_Previews: PreviewProvider {
-  static var previews: some View {
-    Shapes()
-  }
+#Preview {
+  Shapes()
 }

@@ -48,13 +48,9 @@ struct LabelText: View {
   }
 }
 
-struct TextViews_Previews: PreviewProvider {
-  static var previews: some View {
-    VStack {
-      InstructionText(text: "Instructions")
-      BigNumberText(text: "999")
-      SliderLabelText(text: "99")
-      LabelText(text: "Score")
-    }
-  }
+#Preview {
+  InstructionText(text: "Instructions")
+  BigNumberText(text: "999")
+  SliderLabelText(text: "99")
+  LabelText(text: "Score")
 }

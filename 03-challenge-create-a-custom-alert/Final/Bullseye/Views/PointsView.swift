@@ -20,11 +20,15 @@ struct PointsView: View {
   }
 }
 
-struct PointsView_Previews: PreviewProvider {
-  static var previews: some View {
-    PointsView()
-    PointsView()
-      .preferredColorScheme(.dark)
-      .previewInterfaceOrientation(.landscapeRight)
-  }
+#Preview {
+  @Previewable @State var alertIsVisible = true
+  @Previewable @State var game = Game()
+  PointsView(alertIsVisible: $alertIsVisible, sliderValue: .constant(50.0), game: $game)
+}
+
+#Preview("Dark Mode", traits: .landscapeRight) {
+  @Previewable @State var alertIsVisible = true
+  @Previewable @State var game = Game()
+  PointsView(alertIsVisible: $alertIsVisible, sliderValue: .constant(50.0), game: $game)
+    .preferredColorScheme(.dark)
 }

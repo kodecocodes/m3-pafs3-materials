@@ -76,16 +76,11 @@ struct ButtonText: View {
   }
 }
 
-struct TextViews_Previews: PreviewProvider {
-  static var previews: some View {
-    VStack {
-      InstructionText(text: "Instructions")
-      BigNumberText(text: "999")
-      SliderLabelText(text: "99")
-      LabelText(text: "Score")
-      BodyText(text: "You scored 200 Points\n 😻😻😻")
-      ButtonText(text: "Start New Round")
-    }
-    .padding()
-  }
+#Preview {
+  InstructionText(text: "Instructions")
+  BigNumberText(text: "999")
+  SliderLabelText(text: "99")
+  LabelText(text: "Score")
+  BodyText(text: "You scored 200 Points\n 😻😻😻")
+  ButtonText(text: "Start New Round")
 }

@@ -91,11 +91,12 @@ struct HitMeButton: View {
   }
 }
 
-struct ContentView_Previews: PreviewProvider {
-  static var previews: some View {
-    ContentView()
-    ContentView()
-      .preferredColorScheme(.dark)
-      .previewDevice("iPhone 14 Pro Max")
-  }
+#Preview {
+  ContentView()
+}
+
+#Preview("Dark Mode") {
+  ContentView()
+    .preferredColorScheme(.dark)
+    .previewDevice("iPhone 14 Pro Max")
 }

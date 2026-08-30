@@ -58,10 +58,11 @@ struct PreviewView: View {
   }
 }
 
-struct RoundedViews_Previews: PreviewProvider {
-  static var previews: some View {
-    PreviewView()
-    PreviewView()
-      .preferredColorScheme(.dark)
-  }
+#Preview {
+  PreviewView()
+}
+
+#Preview("Dark Mode") {
+  PreviewView()
+    .preferredColorScheme(.dark)
 }
