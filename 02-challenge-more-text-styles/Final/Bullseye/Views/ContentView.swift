@@ -98,5 +98,4 @@ struct HitMeButton: View {
 #Preview("Dark Mode") {
   ContentView()
     .preferredColorScheme(.dark)
-    .previewDevice("iPhone 14 Pro Max")
 }
